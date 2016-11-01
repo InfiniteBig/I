@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>锤子官网首页</title>
+	<style type="text/css">
+		body,ul,li,p,span,a,dl,dt,dd,strong{
+			padding: 0;
+			margin: 0;
+		}
+		strong{
+			font-weight: 500;
+		}
+		a{
+			text-decoration: none; 
+		}
+		ul,li{
+			list-style: none;
+		}
+		input{
+			border: 0 none;
+		}
+		.left{
+			float: left;
+		}
+		.right{
+			float: right;
+		}
+		/*顶部开始*/
+		.top_bg{
+			height: 100px;
+			width: 100%;
+			background: #000;
+		}
+		.top{
+			height: 100%;
+			width: 1118px;
+			margin: 0 auto;
+		}
+		.top .logo{
+			width: 46px;
+			height: 46px;
+			background: url(images/logo.png) -2px -2px;
+			margin-top: 30px;
+			margin-right: 250px;
+		}
+		.top_nav li{
+			float: left;
+			
+			
+		}
+		.top_nav li a{
+			font: 14px/100px 微软雅黑;
+			color: #979797;
+			padding-right: 40px;
+		}
+		.top_nav li a:hover{
+			color: #fff;
+		}
+		.top_nav input{
+			width: 96px;
+			height: 26px;
+			background: #101010;
+			border-radius: 5px;
+			margin-top: 35px;
+			font-family: microsoft yahei;
+			border: 1px solid #242424;
+			color: #979797;
+		}
+		/*顶部结束*/
+		.big_bg{
+			height: 3275px;
+			width: 100%;
+			background: #EDEDED;
+		}
+		/*导航开始*/
+		.nav_bg{
+			height: 90px;
+			width: 1118px;
+			margin: 0 auto;
+		}
+		.nav_bg ul li{
+			float: left;
+			
+		}
+		.nav_bg ul li a{
+			font: 14px/90px 微软雅黑;
+			color: #666;
+			padding-right: 55px;
+		}
+		.nav_bg ul li a:hover{
+			color: #FD5E58;
+		}
+		.nav_bg .shopcar{
+			width: 100px;
+			height: 25px;
+			padding-left: 20px;
+			margin-right: 0px;
+			margin-top: 35px;
+			background: url(images/K57er3WMAAAAASUVORK5CYII=.png) no-repeat -9px -462px;
+			text-align: center;
+			line-height: 25px;
+			color:  #666;
+			font-family: 微软雅黑;
+			font-size: 14px;
+		}
+		.nav_bg .shopcar .num{
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			line-height: 20px;
+			float: right;
+			background: #9E9E9E;
+			color:#fff;
+		}
+		/*导航结束*/
+		/*轮播图开始*/
+		.pic{
+			height: 460px;
+			width: 1118px;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			background: url(images/E2AAs4fxpk4sm04AAAAASUVORK5CYII=.png);
+		}
+		.pic img{
+			height: 460px;
+			width: 100%;
+		}
+		/*轮播图结束*/
+		/*内容一区开始*/
+		.content1_bg{
+			height: 640px;
+			width: 1117px;
+			border: 1px solid #CECECE;
+			border-bottom: 0 none;
+			border-radius: 8px;
+			margin: 0 auto ;
+			background-color: #fff;
+		}
+		.content1_l{
+			width: 744px;
+			height: 100%;
+			background: #fff;
+		}
+		.content1_l_t{
+			overflow: hidden;
+			height: 319px;
+			width: 100%;
+			background: url(images/home-smartisan-goods-02_328371e527.png) no-repeat right;
+			border-bottom: 1px solid #CECECE;
+			border-left: 0 none;
+			border-top: 0 none;
+		}
+		.content1_l_t_price{
+			width: 293px;
+			height: 130px;
+			margin-left: 75px;
+			margin-top:96px;
+			text-align: center;
+			font-family: 微软雅黑;
+		}
+
+		.content1_l_b{
+			height: 319px;
+			width: 100%;
+			background: url(images/kP97hoXaFL7EAAAAAASUVORK5CYII=.png) no-repeat right ;
+			border-left: 0 none;
+			overflow: hidden;
+			/*border-bottom: 1px solid #CECECE;*/
+		}
+		.content1_l_b_price{
+			height: 74px;
+			width: 244px;
+			margin-left:95px;
+			margin-top: 100px;
+			text-align: center;
+			font-family: 微软雅黑;
+		}
+		.content1_r{
+			width: 372px;
+			height: 100%;
+			border-right: 0 none;
+			border-top: 0 none;
+			border-left: 1px solid #CECECE;
+			background: url(images/P5KLFKGuUkPJAAAAAElFTkSuQmCC.png) no-repeat bottom;
+		}
+		.content1_r_price{
+			height: 135px;
+			width: 265px;
+			margin: 93px auto;
+			text-align: center;
+			font-family: 微软雅黑;
+		}
+		/*内容一区结束*/
+		/*内容二区开始*/
+		.content2_bg{
+			background-color: #fff;
+			height: 810px;
+			width: 1116px;
+			border: 1px solid #CECECE;
+			border-top: 0 none;
+			border-right: 0 none;
+			margin: 0 auto;
+			margin-bottom: 10px;
+		}
+		.content2_bg ul li img{
+			width: 368px;
+		}
+		.content2_bg ul li{
+			position: relative;
+			float: left;
+			height: 405px;
+			width: 371px;
+			border-top: 1px solid #CECECE;
+			border-right: 1px solid #CECECE;
+		}
+		.content2_bg ul li p{
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+		}
+		.content2_bg ul li p span{
+			float: right;
+			margin-bottom: 30px;
+			margin-left: 60px;
+		}
+		.content2_price{
+			position: absolute;
+			height: 55px;
+			width: 100%;
+			bottom: 55px;
+			font-family: 微软雅黑;
+			padding: 0 20px 0 20px;
+		}
+		/*内容二区结束*/
+		/*内容三区开始*/
+		.content3_bg{
+			background-color: #fff;
+			height: 640px;
+			width: 1116px;
+			margin: 0 auto;
+		}
+		.content3_l{
+			width: 743px;
+			height: 100%;
+			background: #fff;
+		}
+		.content3_l_t{
+			overflow: hidden;
+			height: 319px;
+			width: 100%;
+			background: url(images/7.png) no-repeat 400px;
+			border-bottom: 1px solid #CECECE;
+			border-left: 1px solid #CECECE;
+			border-top: 1px solid #CECECE;
+		}
+		.content3_l_b{
+			overflow: hidden;
+			height: 318px;
+			width: 100%;
+			background: url(images/8.png) no-repeat 400px ;
+			/*border-bottom: 1px solid #CECECE;*/
+			border-left: 1px solid #CECECE;
+		}
+		.content3_r{
+			width: 371px;
+			height:638px;
+			border-top: 1px solid #CECECE;
+			border-left: 1px solid #CECECE;
+			background: url(images/9.jpg) no-repeat bottom;
+			/*border-bottom: 1px solid #CECECE;*/
+			border-right: 1px solid #CECECE;
+		}
+		/*内容三区结束*/
+		/*内容四区开始*/
+		.content4_bg{
+			background-color: #fff;
+			height: 400px;
+			width: 1116px;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			border: 1px solid #CECECE;
+		}
+		.content4_bg img{
+			margin: 50px auto;
+			margin-left:30px;
+			width: 300px;
+		}
+		.content4_bg ul li{
+			float: left;
+			height: 400px;
+			width: 371px;
+			border-right: 1px solid #CECECE;
+		}
+		/*内容四区结束*/
+		/*信息栏开始*/
+		.clearfix:before{
+			content: ".";
+			height: 0;
+			line-height: 0;
+			display: block;
+			overflow: hidden;
+			visibility: hidden;
+			clear: both;
+		}
+		.kefu_bg{
+			background-color: #fff;
+			height: 153px;
+			width: 1118px;
+			margin: 0 auto;
+			margin-bottom: 42px;
+			
+		}
+		.kefu_bg ul li p{
+			overflow: hidden;
+			display: block;
+			width: 47px;
+			height: 47px;
+			margin-top: 20px;
+
+
+		}
+		.kefu_bg ul li .txt{
+			height: 60px;
+			text-align: center;
+			font-family: 微软雅黑;
+		}
+	 	.kefu_bg ul li .txt p{
+			width: 100%;
+			font-size: 12px;
+			color:#A8A8A8;
+		}
+		.kefu_bg ul li .one,.kefu_bg ul li .two,.kefu_bg ul li .three,.kefu_bg ul li .four{
+			height: 50px;
+			width: 50px;
+			margin: 30px  auto;
+			margin-bottom:5px;
+		}
+		.kefu_bg ul li .one{ 
+			background: url(images/shopping-info_1d658b7a09.png) no-repeat 6px 6px;
+		}
+		.kefu_bg ul li .two{
+			background: url(images/shopping-info_1d658b7a09.png) no-repeat -40px 6px;
+		}
+		.kefu_bg ul li .three{
+			background: url(images/shopping-info_1d658b7a09.png) no-repeat -92px 6px;
+		}
+		.kefu_bg ul li .four{
+			background: url(images/shopping-info_1d658b7a09.png) no-repeat -143px 6px;
+		}
+		
+		.kefu_bg ul li{
+			float: left;
+			width: 277px;
+			height: 153px;
+		}
+
+		/*信息栏结束*/
+		/*底部开始*/
+		.bottom_bg{
+			height: 363px;
+			width: 100%;
+		}
+		.bottom_t{
+			height: 225px;
+			width: 1118px;
+			margin:0 auto;
+			border-bottom: 1px solid #666;
+		}
+		.bottom_t_l{
+			height: 100%;
+			width: 835px;
+		}
+		.bottom_t dl{
+			margin-top: 40px;
+			margin-right: 110PX;
+			float: left;
+		}
+		.bottom_t dl dt{
+			font-size: 18px;
+			font-family: 微软雅黑;
+			color: #424242;
+			margin-bottom: 30px;
+		}
+		.bottom_t dl dd{
+			font: 14px 微软雅黑;
+			color: #757575;
+			padding-bottom: 15px;
+		}
+		.bottom_t .phone{
+			width: 247px;
+			height: 120px;
+			margin-top: 45px;
+			
+		}
+		.bottom_t .phone .pic1{
+			height: 34px;	
+			background: url(images/fyiL8B8Gct3S6f+WgAAAAASUVORK5CYII=.png) no-repeat top right;
+			
+		}
+		.bottom_t .phone .pic1 span{
+			color:#fff;
+			float: right;
+			padding-right: 10px;
+			padding-top: 8px;
+		}
+		.bottom_t .phone .number{
+			height: 80px;
+			width: 100%;
+		}
+		.bottom_b{
+			height: 137px;
+			width: 1118px;
+			margin: 0 auto;
+		}
+	
+		.bottom_b ul li{
+			float: left;
+			margin-top: 30px;
+			margin-bottom:10px;
+			font-size: 14px;
+			color:#757575;
+			font-family: 微软雅黑;
+			border-right: 1px solid #aaa; 
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+		.bottom_b ul li a{
+			color:#84A3E3;
+		}
+		.bottom_b p{
+			width: 50%;
+			margin-left: 10px;
+			font-size: 14px;
+			color: #BDBDBD;
+		}
+		/*底部结束*/
+	</style>         
+</head>
+<body>  
+	<!-- 顶部开始      -->
+	<div class="top_bg">
+		<div class="top">
+			<div class="logo left"></div>
+			<div class="top_nav">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">Smartisan T2</a></li>
+					<li><a href="#">坚果手机</a></li>
+					<li><a href="#">Smartisan OS</a></li>
+					<li><a href="#">欢喜云</a></li>
+					<li><a href="#">应用下载</a></li>
+					<li ><a href="#" style="border-right: 1px solid #7f7f7f">官方论坛</a></li>
+				</ul>
+				<input type="submit" value="登陆" class="right">
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	<div class="big_bg">
+	<!-- 导航开始 -->
+		<div class="nav_bg">
+			<ul>
+			 	<li><a href="#">手机</a></li>
+			 	<li><a href="#">耳机/音响</a></li>
+			 	<li><a href="#">背壳/保护套</a></li>
+			 	<li><a href="#">"情杯"背壳</a></li>
+			 	<li><a href="#">其他周边</a> </li>
+			 	<li></li>
+			 	<li></li>
+			 </ul> 
+			 <div class="shopcar right">购物车 <div class="num">0</div></div>
+		</div>
+		<!-- 导航结束 -->
+		<!-- 轮播图开始 -->
+		<div class="pic">
+			<img src="images/png.png" alt="">
+		</div>
+		<!-- 轮播图结束 -->
+		<!-- 内容一区开始 -->
+		<div class="content1_bg">
+			<div class="content1_l left">
+				<div class="content1_l_t">
+					<div class="content1_l_t_price">
+						<h3 style="color:#424242;">Smartisan T2 官方保护套</h3>
+						<p style="font-size:14px;color:#B2B2B2;margin-bottom:10px;">保护玻璃表面的同时,也与黑色机身相得益彰</p>
+						<span style="color:#DE4037;margin-bottom:10px;">￥<strong style="font-size:30px";>49</strong></span>
+					</div>
+				</div>
+				<div class="content1_l_b">
+						<div class="content1_l_b_price">
+						<h3 style="color:#424242;">手机意外保修</h3>
+						<p style="font-size:14px;color:#B2B2B2;margin-bottom:10px;">"免费更换一次主机?""免费一次维修"</p>
+						
+					</div></div>
+			</div>
+			<div class="content1_r right">
+				<div class="content1_r_price">
+						<h3 style="color:#424242;">Smartisan S-1000 系列</h3>
+						<p style="font-size:14px;color:#B2B2B2;margin-bottom:10px;">VSONIC 创始人全程参与调音</p>
+						<span style="color:#DE4037;margin-bottom:10px;">￥<strong style="font-size:30px";>199</strong></span>
+					</div>
+			</div>
+		</div>
+		<!-- 内容一区结束 -->
+		<!-- 内容二区开始 -->
+		<div class="content2_bg">
+			<ul>
+				<li><a href="#"><img src="images/1.png" alt="">
+					<div class="content2_price">
+					<h3 style="color:#424242;">Smartisan T 男款</h3>
+					<p style="font-size:14px;color:#B2B2B2;margin-bottom:5px;">100% 美国 SUPIMA 棉 T 恤衫
+					<span class="right" style="color:#DE4037;margin-bottom:10px; padding-right:15px;">￥<strong style="font-size:30px";>49</strong></span></p></div></a>
+				</li>
+				<li><a href="#"><img src="images/2.png" alt=""><div class="content2_price">
+					<h3 style="color:#424242;">Smartisan T 男款</h3>
+					<p style="font-size:14px;color:#B2B2B2;margin-bottom:5px;">100% 美国 SUPIMA 棉 T 恤衫
+					<span class="right" style="color:#DE4037;margin-bottom:10px; padding-right:15px;">￥<strong style="font-size:30px";>49</strong></span></p></div></a>
+				</li>
+				<li><a href="#"><img src="images/3.png" alt=""><div class="content2_price">
+					<h3 style="color:#424242;">Smartisan T 男款</h3>
+					<p style="font-size:14px;color:#B2B2B2;margin-bottom:5px;">100% 美国 SUPIMA 棉 T 恤衫
+					<span class="right" style="color:#DE4037;margin-bottom:10px; padding-right:15px;">￥<strong style="font-size:30px";>49</strong></span></p></div></a>
+				</li>
+				<li><a href="#"><img src="images/4.png" alt=""><div class="content2_price">
+					<h3 style="color:#424242;">Smartisan T 男款</h3>
+					<p style="font-size:14px;color:#B2B2B2;margin-bottom:5px;">100% 美国 SUPIMA 棉 T 恤衫
+					<span class="right" style="color:#DE4037;margin-bottom:10px; padding-right:15px;">￥<strong style="font-size:30px";>49</strong></span></p></div></a>
+				</li>
+				<li><a href="#"><img src="images/5.png" alt=""><div class="content2_price">
+					<h3 style="color:#424242;">Smartisan T 男款</h3>
+					<p style="font-size:14px;color:#B2B2B2;margin-bottom:5px;">100% 美国 SUPIMA 棉 T 恤衫
+					<span class="right" style="color:#DE4037;margin-bottom:10px; padding-right:15px;">￥<strong style="font-size:30px";>49</strong></span></p></div></a>
+				</li>
+				<li><a href="#"><img src="images/6.png" alt=""><div class="content2_price">
+					<h3 style="color:#424242;">Smartisan T 男款</h3>
+					<p style="font-size:14px;color:#B2B2B2;margin-bottom:5px;">100% 美国 SUPIMA 棉 T 恤衫
+					<span class="right" style="color:#DE4037;margin-bottom:10px; padding-right:15px;">￥<strong style="font-size:30px";>49</strong></span></p></div></a>
+				</li>
+			</ul>
+		</div>
+		<!-- 内容二区结束 -->
+		<!-- 内容三区开始 -->
+		<div class="content3_bg">
+			<div class="content3_l left">
+				<div class="content3_l_t">
+					<div class="content1_l_t_price">
+						<h3 style="color:#424242;">先锋 MOMO防水蓝牙音响</h3>
+						<p style="font-size:14px;color:#B2B2B2;margin-bottom:10px;">IPX-7级防水,持久续航</p>
+						<span style="color:#DE4037;margin-bottom:10px;">￥<strong style="font-size:30px";>399</strong></span>
+					</div>
+				</div>
+				<div class="content3_l_b">
+					<div class="content1_l_b_price">
+						<h3 style="color:#424242;">先锋 SE-CL35S 入耳式耳机</h3>
+						<p style="font-size:14px;color:#B2B2B2;margin-bottom:10px;">防缠绕设计,降噪麦克</p>
+						<span style="color:#de4037;margin-bottom:10px;">￥<strong style="font-size:30px";>299</strong></span>
+						
+					</div>
+				</div>
+			</div>
+			<div class="content3_r right">
+				<div class="content1_r_price">
+						<h3 style="color:#424242;">UA&JBL Wireless</h3>
+						<p style="font-size:14px;color:#B2B2B2;margin-bottom:10px;">
+						库里代言专业运动耳机</p>
+						<span style="color:#DE4037;margin-bottom:10px;">￥<strong style="font-size:30px";>1198</strong></span>
+					</div>
+			</div>
+		</div>
+		<!-- 内容三区结束 -->
+		<!-- 内容四区开始 -->
+		<div class="content4_bg">
+			<ul>
+				<li><a href="#"><img src="images/10.png" alt=""></a></li>
+				<li><a href="#"><img src="images/11.png" alt=""></a></li>
+				<li style="border-right: 0 none;"><a href="#"><img src="images/12.png" alt=""></a></li>
+			</ul>
+		</div>
+		<!-- 内容四区结束 -->
+		<!-- 信息栏开始 -->
+		<div class="kefu_bg clearfix">
+			<ul>
+				<li ><div class="one"></div><div class="txt"><span>在线客服</span><p>周一至周日 9:00-18:00</p></div></li>
+				<li ><div class="two"></div><div class="txt"><span>7天无理由退货</span><p>7天无理由退货 请放心购买</p></div></li>
+				<li ><div class="three"></div><div class="txt"><span>15天免费换货</span><p>15天内如遇质量问题免费换货</p></div></li>
+				<li ><div class="four"></div><div class="txt"><span>满150元免运费</span><p>全场使用顺丰快递</p></div></li>
+			</ul>
+		</div>
+		<!-- 信息栏结束 -->
+	</div>
+		<!-- 底部开始 -->
+	<div class="bottom_bg ">
+		<div class="bottom_t">
+		<div class="bottom_t_l left" >
+			<dl>
+				<dt>订单服务</dt>
+					<dd>购买指南</dd>
+					<dd>支付方式</dd>
+					<dd>送货方式</dd>
+				
+			</dl>
+			<dl>
+				<dt>服务支持</dt>
+					<dd>售后服务</dd>
+					<dd>维修门店</dd>
+					<dd>零售门店</dd>
+				
+			</dl>
+			<dl>
+				<dt>媒体中心</dt>
+					<dd>新闻动态</dd>
+					<dd>官方视频</dd>
+					<dd>图片资源</dd>
+				
+			</dl>
+			<dl>
+				<dt>关于公司</dt>
+					<dd>公司简介</dd>
+					<dd>加入我们</dd>
+					<dd>联系我们</dd>
+				
+			</dl>
+			<dl style="margin-right:0px;">
+				<dt>关注我们</dt>
+					<dd>新浪微博</dd>
+					<dd>官方微信</dd>
+					<dd>官方贴吧</dd>
+				
+			</dl>
+			</div>
+			<div class="phone right">
+				<div class="pic1" ><span>在线咨询</span></div>
+				<div class="number">
+				<p style="font-size:34px;font-family:微软雅黑;width: 100%;margin-top: 5px;margin-bottom:10px;padding-left: 20px;">400-619-0909</p>
+				<p style="font-size:14px;color:#BDBDBD;padding-left: 2px;">周一至周日 9:00-18:00（仅收市话费）</p>
+				</div>
+			</div>
+		</div>
+		<div class="bottom_b">
+			<ul>
+				<li>Copyright © 2016, Smartisan Digital Co., Ltd. All Rights Reserved.北京锤子数码科技有限公司</li>
+				<li><a href="#">法律声明</a></li>
+				<li><a href="#">隐私条款</a></li>
+				<li><a href="#">开发者中心</a></li>
+			</ul>  
+			<p>京ICP备14041720号-1 京ICP证140622号 京公网安备11010502025474</p>
+		</div>
+	</div>
+		<!-- 底部结束 -->
+</body>
+</html>
